@@ -36,7 +36,7 @@ const Reviews = ({ books, isLogin, role }) => {
 
     return (
         <div>
-            <h2>{id}</h2>
+            {/* <h2>{id}</h2> */}
             <ul className="ReviewList">
                 <li>Title: {bookTitle}</li>
                 <li>Author: {bookAuthor}</li>

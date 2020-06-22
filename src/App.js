@@ -49,9 +49,9 @@ const App = ({ isLogin, setToken, setState, role, activeUser }) => {
                     Book Management
                     {btnGroup}
                     <br />
-                    Role: {role}
+                    {/* Role: {role} */}
                     <br />
-                    Active: {activeUser}
+                    {/* Active: {activeUser} */}
                 </header>
 
                 <Switch>

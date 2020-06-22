@@ -14,7 +14,6 @@ const RowList = ({ role, books }) => {
                 index={books.indexOf(book) + 1}
             />
         }
-
         ))
 }
 

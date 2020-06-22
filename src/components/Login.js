@@ -6,8 +6,8 @@ import {
 
 const Login = ({ getBookList, isLogin, validateLogin, setRegisterSuccess }) => {
 
-    const [username, setUsername] = React.useState('anhphuc311')
-    const [password, setPassword] = React.useState('lenhu154')
+    const [username, setUsername] = React.useState('')
+    const [password, setPassword] = React.useState('')
     const [rememberPassword, setRememberPassword] = React.useState(false)
     // const [isSuccess, setSuccess] = React.useState(false)    
 

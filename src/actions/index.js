@@ -97,10 +97,7 @@ export const addUser = user => {
 }
 
 export const addReview = (review, bookId) => {
-    console.log(review)
-    console.log(bookId)
     const url = '/books/' + bookId + '/reviews'
-    console.log(url)
 
     return (dispatch) => {
         const config = {
@@ -128,7 +125,6 @@ export const checkBookAuth = id => {
     const token = localStorage.token;
 
     if (token) {
-        console.log(token)
 
         const config = {
             headers: {

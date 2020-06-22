@@ -53,7 +53,6 @@ const App = ({ isLogin, setToken, setState, role, activeUser }) => {
                     <br />
                     {/* Active: {activeUser} */}
                 </header>
-
                 <Switch>
                     <Route path="/login" >
                         <VisibleLogin />

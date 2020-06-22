@@ -7,7 +7,6 @@ import ButtonGroup2 from './ButtonGroup2'
 import { FormControl } from '@material-ui/core'
 import { Redirect } from 'react-router-dom'
 
-
 // add and edit function
 const AddBooks = ({ addBook, updateBook, activeUser, books, isLogin, checkBookAuth }) => {
 
@@ -24,7 +23,7 @@ const AddBooks = ({ addBook, updateBook, activeUser, books, isLogin, checkBookAu
         const book = books.find(book => book._id === id)
 
         if (book) {
-            console.log('find')
+            // console.log('find')
             setBookTitle(book.title)
             setBookAuthor(book.author)
             setBookQuantity(book.quantity)
@@ -32,20 +31,21 @@ const AddBooks = ({ addBook, updateBook, activeUser, books, isLogin, checkBookAu
             setBookDescription(book.description)
 
         } else {
-            console.log('404')
+            // console.log('404')
             const url = "/list"
             return <Redirect to={url} />
         }
     }, [books])
 
     React.useEffect(() => {
+        console.log(isLogin)
         if (isLogin) {
             if (id) {
                 console.log('find-book')
                 findBook(id)
             }
         }
-    }, [id, isLogin])
+    }, [isLogin])
 
     const onAddBook = e => {
         e.preventDefault();

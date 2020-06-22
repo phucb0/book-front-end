@@ -79,13 +79,13 @@ const Login = ({ getBookList, isLogin, validateLogin, setRegisterSuccess }) => {
                     onChange={handlePasswordChange} />
             </label>
             <br />
-            <label>
+            {/* <label>
                 <input type="checkbox"
                     name="remember"
                     value={rememberPassword}
                     onChange={handleRememberPasswordChange} />
                 Remember Password ?
-            </label>
+            </label> */}
             <br />
             <input type="submit" value="Log in" onClick={onValidateLogin} />
         </form>

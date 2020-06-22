@@ -42,6 +42,7 @@ const users = (state = initialState, action) => {
             })
 
         case 'LOG_OUT':
+            localStorage.removeItem('token')
             return Object.assign({}, state, {
                 users: [],
                 activeUser: '',

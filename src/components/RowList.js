@@ -4,7 +4,7 @@ import VisibleRow from '../containers/VisibleRow';
 
 const RowList = ({ role, books }) => {
 
-    console.log(books)
+    // console.log(books)
     return (
         books.map(book => {
             return < VisibleRow
